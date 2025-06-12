@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "ocr-bill-matcher"
+version = "0.1.0"
+description = "OCR medical bill matcher using Gemini and PostgreSQL"
+authors = ["Your Name <you@example.com>"]
+packages = [{ include = "backend" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110"
+uvicorn = "^0.30"
+pytesseract = "^0.3"
+pillow = "^10.2"
+psycopg2 = "^2.9"
+google-generativeai = "^0.3"
+python-multipart = "^0.0.9"
+tabulate = "^0.9"
+pydantic = "^2.6"
+python-dotenv = "^1.0"
+rapidfuzz = "^3.6"
+streamlit = "^1.45.1"
+pydantic-settings = "^2.9.1"
+scikit-learn = "^1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
